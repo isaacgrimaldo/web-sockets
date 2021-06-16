@@ -4,7 +4,7 @@ require('dotenv').config();
 const cors =  require('cors');
 const express = require('express');
 
-const { clientes, cliente } = require('../sockets/controllers');
+const { cliente } = require('../sockets/controllers');
 
 class Server { 
      

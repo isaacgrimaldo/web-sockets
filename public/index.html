@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <title>Web Sokets</title>
-</head>
-<body>
-     <h1>App de webSockets</h1>
-     <hr>
-      
-     <div>
-         <p id="txtOffline" class="text-danger">Offline</p>
-         <p id="txtOnline" class="text-success">Online</p>
-     </div>
-     
-     <div class="row">
-         <div class="col">
-              <input type="text" class="form-control" id="message" >
-         </div>
-         <div class="col">
-              <button class="btn btn-primary" id="bntSend">Enviar</button>
-         </div>
-     </div>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programa de Colas</title>
 
-    <div class="content">
-         <h2 class="text-center bg-dark text-white m-2">Chat</h2>
-         <div id="chat"  class="bg-primary text-center text-success">
-    
-         </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <h1 class="mt-5">Programa de Colas</h1>
+
+    <div class="row">
+        <div class="col-6">
+
+            <a class="btn btn-primary" href="publico.html">Pantalla publica</a>
+            <a class="btn btn-secondary" href="nuevo-ticket.html">Crear Tickets</a>
+
+        </div>
+
+        <div class="col-6">
+            <form action="escritorio.html">
+
+                <input name="escritorio" 
+                       type="text" 
+                       class="form-control" 
+                       placeholder="Escritorio" 
+                       autofocus 
+                       required>
+
+                <br>
+                <button type="submit" class="btn btn-primary">
+                    Ingresar
+                </button>
+            </form>
+        </div>
     </div>
 
-
-    <script src="./socket.io/socket.io.js"></script>
-    <script  src="./js/soketClient.js"></script>
 </body>
+
 </html>
